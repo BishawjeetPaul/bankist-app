@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    /* Light gray background like the image */
+    min-height: 100vh;
+    /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    /* Allow header and main content to stack */
+}
+
+.header-custom {
+    background-color: #ffffff;
+    /* White background for the header */
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    /* Subtle shadow for header */
+}
+
+.logo {
+  height: 3rem;
+}
+
+.login-input-group {
+    display: flex;
+    align-items: center;
+}
+
+.login-input {
+    border: 1px solid #dee2e6;
+    /* Bootstrap's default border color */
+    border-radius: .25rem;
+    /* Bootstrap's default border radius */
+    padding: .375rem .75rem;
+    /* Bootstrap's default input padding */
+    margin-left: .5rem;
+    /* Space between inputs */
+    color: #495057;
+    /* Bootstrap's default text color */
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.login-input.pin {
+    border-right: 1px solid #dee2e6;
+    /* Ensure PIN has a right border */
+}
+
+.input-placeholder {
+    color: #aaa;
+    /* Lighter color for placeholder text */
+    margin-right: 5px;
+    /* Space if there's actual input */
+}
+
+.arrow-button-custom {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0 .5rem;
+    color: #333;
+}
+
+.welcome-section {
+    flex-grow: 1;
+    /* Make this section take up remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center content vertically and horizontally */
+}
+
+.welcome-message {
+    font-size: 3em;
+    /* Large font size for welcome message */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
